@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dot Net\\HW\\DayWise\\Day1\\Bank\\Bank.csproj": {}
+    "D:\\Dot Net\\HW\\DotNet\\DayWise\\Day1\\Bank\\Bank.csproj": {}
   },
   "projects": {
-    "D:\\Dot Net\\HW\\DayWise\\Day1\\Bank\\Bank.csproj": {
+    "D:\\Dot Net\\HW\\DotNet\\DayWise\\Day1\\Bank\\Bank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dot Net\\HW\\DayWise\\Day1\\Bank\\Bank.csproj",
+        "projectUniqueName": "D:\\Dot Net\\HW\\DotNet\\DayWise\\Day1\\Bank\\Bank.csproj",
         "projectName": "Bank",
-        "projectPath": "D:\\Dot Net\\HW\\DayWise\\Day1\\Bank\\Bank.csproj",
+        "projectPath": "D:\\Dot Net\\HW\\DotNet\\DayWise\\Day1\\Bank\\Bank.csproj",
         "packagesPath": "C:\\Users\\utkar\\.nuget\\packages\\",
-        "outputPath": "D:\\Dot Net\\HW\\DayWise\\Day1\\Bank\\obj\\",
+        "outputPath": "D:\\Dot Net\\HW\\DotNet\\DayWise\\Day1\\Bank\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\utkar\\AppData\\Roaming\\NuGet\\NuGet.Config",

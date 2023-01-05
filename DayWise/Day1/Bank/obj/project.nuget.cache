@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8NesAifoAgiRVD94YB0bTixPOmOJHgutrpd/gSrt/cvv0j51jlRWuuXuexALe1D9P7zCiemr0V270SxBgeVegw==",
+  "dgSpecHash": "KM3We1vNo9I1C/9d4XHFhexPMVE3Ta8uAG+udlu7RmdJkEBmevJHKy08yCT+x40AjT98oKeoeUn+YK8PMEZoEg==",
   "success": true,
-  "projectFilePath": "D:\\Dot Net\\HW\\DayWise\\Day1\\Bank\\Bank.csproj",
+  "projectFilePath": "D:\\Dot Net\\HW\\DotNet\\DayWise\\Day1\\Bank\\Bank.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
