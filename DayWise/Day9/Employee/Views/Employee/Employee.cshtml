@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"]="Employee";
+}
+<form action="/Employee/EmployeeAdd">
+  <div class="form-group">
+    <label for="Id">Enter ID</label>
+    <input type="number" class="form-control" id="Id" aria-describedby="emailHelp" name="Id">
+  </div>
+  <div class="form-group">
+    <label for="Name">Enter Name</label>
+    <input type="text" class="form-control" id="Name" aria-describedby="emailHelp" name="Name">
+  </div>
+  <div class="form-group">
+    <label for="desg">Enter Designation</label>
+    <input type="text" class="form-control" id="desg" aria-describedby="emailHelp" name="desg">
+  </div>
+  <div class="form-group">
+    <label for="sal">Enter Basic Salary</label>
+    <input type="number" class="form-control" id="sal" aria-describedby="emailHelp" name="sal">
+  </div>
+  <button type="submit" class="btn btn-primary" id="btn" name="btn">Submit</button>
+</form>
+<br><br>
+<form action="/Employee/EmployeeDisplay" style="margin-left: 30%;">
+  <button type="submit" class="btn btn-primary" id="btn" name="btn">Display All Employees</button>
+</form>
