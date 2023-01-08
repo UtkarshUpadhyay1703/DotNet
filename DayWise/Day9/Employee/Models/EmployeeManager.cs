@@ -4,13 +4,14 @@ using System.Collections.Generic;
 
 public static class EmployeeManager{
     public static void AddEmployee(Employees emp){
-    List<Employees> list = new List<Employees>();
+    // List<Employees> list = new List<Employees>();
     string fileName=@"D:\Dot Net\HW\DotNet\DayWise\Day9\Employee\Emp.json";
     string jsonString=File.ReadAllText(fileName);
     List<Employees> jsonEmp=JsonSerializer.Deserialize<List<Employees>>(jsonString);
-    list.Add(emp);
+    // list.Add(emp);
+    jsonEmp.Add(emp);
     var options=new JsonSerializerOptions { IncludeFields=true};
-    var employeejson=JsonSerializer.Serialize<List<Employees>>(list,options);
+    var employeejson=JsonSerializer.Serialize<List<Employees>>(jsonEmp,options);
     File.WriteAllText(fileName,employeejson);
     Console.WriteLine("Serialization Done");
     }

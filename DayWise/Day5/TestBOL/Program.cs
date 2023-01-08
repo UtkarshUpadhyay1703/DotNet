@@ -104,11 +104,11 @@ try
             case 4:
                 var options = new JsonSerializerOptions { IncludeFields = true };
                 var employeeJson = JsonSerializer.Serialize<List<Employees>>(list, options);
-                string fileName = @"D:\Dot Net\HW\DotNet\DayWise\Day5\employee.json";
+                string fileName = @"D:\Dot Net\HW\DotNet\DayWise\Day9\Employee\Emp.json";
                 File.WriteAllText(fileName, employeeJson);
                 break;
             case 5:
-             fileName = @"D:\Dot Net\HW\DotNet\DayWise\Day5\employee.json";
+             fileName = @"D:\Dot Net\HW\DotNet\DayWise\Day9\Employee\Emp.json";
                 string jsonString = File.ReadAllText(fileName);
                 List<Employees> jsonEmp = JsonSerializer.Deserialize<List<Employees>>(jsonString);
                 Console.WriteLine("\n Deserialize data from json file\n");
