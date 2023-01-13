@@ -1,0 +1,15 @@
+@using BOL;
+@{
+    ViewData["Title"]="Department";
+}
+<div>
+    <h2>This is the Departments Table</h2>
+@{
+    List<Department> departments=(List<Department>)ViewData["departments"];
+        foreach(Department dept in departments){
+            <oi>
+                <li><a href="/departments/details/@dept.Id">@dept.Name</a></li>
+            </oi>
+        }
+}
+</div>
