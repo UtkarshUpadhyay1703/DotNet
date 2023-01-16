@@ -13,5 +13,11 @@ class Service{
     DeleteNishant(id){
         return axios.delete(this.url+"/"+id);
     }
+    UpdataNishant(id,nishantob){
+        return axios.put(this.url+"/"+id,nishantob);
+    }
+    SearchNishant(id){
+        return axios.get(this.url+"/"+id);
+    }
 }
 export default new Service();

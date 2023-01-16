@@ -39,6 +39,12 @@ const Display=()=>{
             <Link to="Nishant/AddNishant">
                 <button id="b" name="b">Add Nishant</button>
                 </Link>
+                <Link to="Nishant/UpdateNishant">
+                    <button id="update" name="update">Update Nishant</button>
+                </Link>
+                <Link to="Nishant/DisplayById">
+                    <button id="id" name="id">DisplayById</button>
+                </Link>
             <table>
                 <tr>
                     <th>ID :</th>

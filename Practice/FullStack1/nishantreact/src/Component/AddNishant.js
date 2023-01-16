@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import Service from "./Service";
 
 const AddNishant=()=>{
-    // alert("Add");
     let [nishantob,setnishantob]=useState({});
     var history=useHistory();
     const Change=(event)=>{
