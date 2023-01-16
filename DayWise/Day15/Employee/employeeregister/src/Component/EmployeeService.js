@@ -2,10 +2,11 @@ import axios from "axios";
 
 class EmployeeService{
     constructor(){
-        this.baseUrl="localhost:5264";
+        this.baseUrl="http://localhost:5264";
     }
     GetAllEmployees(){
-        return axios.get(this.baseUrl+"/registeremp");
+        // alert("Get");
+        return axios.get(this.baseUrl+"/RegisterEmp");
     }
 }
 export default new EmployeeService();
