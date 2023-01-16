@@ -4,7 +4,6 @@ import EmployeeService from "./EmployeeService";
 const DisplayAllEmployees=()=>{
     const [EmpArr,setEmpArr]=useState([]);
     useEffect (()=>{
-        alert("Effect");
         EmployeeService.GetAllEmployees().then((result)=>{
             console.log(result.data);
             setEmpArr(result.data);
@@ -12,7 +11,6 @@ const DisplayAllEmployees=()=>{
     },[]);
     let Render=()=>{
         return EmpArr.map((emp)=>{
-            alert("Map");
             return <tr key={emp.employee_id}><td>{emp.employee_id}</td><td>{emp.employee_name}</td><td>{emp.employee_address}</td><td>{emp.employee_mobile_no}</td><td>{emp.employee_aadhar_no}</td><td>{emp.employee_bank_account_no}</td><td>{emp.employee_email_id}</td><td>{emp.employee_password}</td><td>{emp.employee_qualification}</td><td>{emp.employee_status}</td></tr>
         })
     }

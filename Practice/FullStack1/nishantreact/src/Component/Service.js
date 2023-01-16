@@ -10,5 +10,8 @@ class Service{
     AddNishant(nishantob){
         return axios.post(this.url,nishantob);
     }
+    DeleteNishant(id){
+        return axios.delete(this.url+"/"+id);
+    }
 }
 export default new Service();

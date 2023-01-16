@@ -1,19 +1,37 @@
 import {useState,useEffect} from "react";
 import Service from "./Service";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 const Display=()=>{
     const [NishantArr,setNishantArr]=useState([]);
+    const [flag,setflag]=useState(false);
+    var history=useHistory();
     useEffect (()=>{
-        alert("Effect");
         Service.GetAllNishant().then((resp)=>{
             console.log(resp.data);
             setNishantArr(resp.data);
         });
     },[]);
 
+    useEffect(()=>{
+        Service.GetAllNishant().then((resp)=>{
+            console.log(resp.data);
+            setNishantArr(resp.data);
+        }).catch((err) => {
+            console.log("error occured", err);
+        });
+    },[flag]);
+
+    const DeleteNishant=(id)=>{
+        Service.DeleteNishant(id).then((resp)=>{
+            console.log(resp.data);
+            setflag(true);
+        })
+    }
+
     let Render=()=>{
         return NishantArr.map((Nish)=>{
-            return <tr><td>{Nish.id}</td><td>{Nish.name}</td><td>{Nish.email}</td></tr>
+            return <tr key={Nish.id}><td>{Nish.id}</td><td>{Nish.name}</td><td>{Nish.email}</td>
+            <button type="button" name="btn" id="btn" onClick={()=>DeleteNishant(Nish.id)}>Delete</button> </tr>
         })
     }
     return(
